@@ -16,18 +16,7 @@
     },
     {
       "title": "JavaScript",
-      "slug": "javascript"
-    },
-    {
-      "title": "Lykilhugtök",
-      "slug": "keywords",
-      "category": "html"
-    },
-    {
-      "title": "Spurningar",
-      "slug": "questions",
-      "category": "html" 
-
+      "slug": "js"
     }
   ],
   "footer": "Áfram vefforritun!"
