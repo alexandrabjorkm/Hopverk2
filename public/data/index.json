@@ -11,16 +11,23 @@
       "slug": "html"
     },
     {
-      "title": "Aðgengi",
-      "slug": "adgengi"
-    },
-    {
       "title": "CSS",
       "slug": "css"
     },
     {
       "title": "JavaScript",
       "slug": "javascript"
+    },
+    {
+      "title": "Lykilhugtök",
+      "slug": "keywords",
+      "category": "html"
+    },
+    {
+      "title": "Spurningar",
+      "slug": "questions",
+      "category": "html" 
+
     }
   ],
   "footer": "Áfram vefforritun!"

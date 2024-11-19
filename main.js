@@ -4,25 +4,33 @@ import { renderIndexPage } from './lib/pages/index-page.js';
 import { renderSubpage } from './lib/pages/sub-page.js';
 
 async function render(root, querystring) {
-  const mainIndexJson = await fetcher('data/index.json');
+  
+  try {
+    const mainIndexJson = await fetcher('data/index.json');
 
-  const params = new URLSearchParams(querystring);
-  const type = params.get('type');
-  const content = params.get('content');
+    const params = new URLSearchParams(querystring);
+    const type = params.get('type'); 
+    const content = params.get('content'); 
 
-  console.log(type, content);
+    console.log('Type:', type, 'Content:', content);
 
-  if (!type) {
-    return renderIndexPage(root, mainIndexJson);
+    if (!type) {
+      return renderIndexPage(root, mainIndexJson);
+    }
+
+    if (content) {
+      document.title = `${type.toUpperCase()} - ${content.charAt(0).toUpperCase() + content.slice(1)}`;
+      return renderContentPage(root, mainIndexJson, type, content);
+    }
+
+    document.title = `${type.toUpperCase()} Overview`;
+    return renderSubpage(root, mainIndexJson, type);
+
+  } catch (error) {
+    console.error('Error rendering the page:', error);
+    root.innerHTML = '<p>Þú er ekki vandamálið, það er ég.</p>';
   }
-
-  if (content) {
-    return renderContentPage(root, mainIndexJson);
-  }
-
-  renderSubpage(root, mainIndexJson, type);
 }
 
 const root = document.querySelector('#app');
-
 render(root, window.location.search);
