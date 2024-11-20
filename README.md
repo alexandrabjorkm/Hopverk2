@@ -2,7 +2,7 @@
 
 ## Virkni
  **Forsíða**:
-   - Haus með titli síðu.
+   - Haus með titli.
    - Lýsing á vefsíðunni.
    - Valmynd með hlekkjum á efni (HTML, CSS, JavaScript).
    - Fótur með skilaboðunum "Áfram vefforitun!"
