@@ -1,5 +1,8 @@
 # Hópverkefni 2
 
+**Netlify linkur:**
+https://hopverkefni2.netlify.app
+
 ## Virkni
  **Forsíða**:
    - Haus með titli.
