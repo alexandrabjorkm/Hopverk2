@@ -2,7 +2,7 @@
 
 Nafn: Alexandra Björk Magnúsdóttir<br>
 Hí netfang: abm18@hi.is<br>
-Git: alexandrabjorkm<br>
+GitHub notendanafn: alexandrabjorkm<br>
 
 **Netlify linkur:**
 https://hopverkefni2.netlify.app
