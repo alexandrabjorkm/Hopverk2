@@ -1,5 +1,9 @@
 # Hópverkefni 2
 
+Nafn: Alexandra Björk Magnúsdóttir
+Hí netfang: abm18@hi.is
+Git: alexandrabjorkm
+
 **Netlify linkur:**
 https://hopverkefni2.netlify.app
 
@@ -22,5 +26,6 @@ Til að keyra verkefnið:
   2. npm install
   3. npm run dev
   4. http://localhost:5173
-   
+
+
 
