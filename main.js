@@ -3,6 +3,14 @@ import { renderContentPage } from './lib/pages/content-page.js';
 import { renderIndexPage } from './lib/pages/index-page.js';
 import { renderSubpage } from './lib/pages/sub-page.js';
 
+async function handleNavigation(event) {
+  event.preventDefault(); 
+  const href = event.target.getAttribute('href'); 
+  const url = new URL(href, window.location.origin); 
+  history.pushState({}, '', url);
+  render(root, url.search);
+}
+
 export async function render(root, querystring) {
   const mainIndexJson = await fetcher('data/index.json');
 
@@ -21,6 +29,10 @@ export async function render(root, querystring) {
   return renderSubpage(root, mainIndexJson, type);
 }
 
-// Make sure the render function is available for import
 const root = document.querySelector('#app');
 render(root, window.location.search);
+
+
+window.addEventListener('popstate', () => {
+  render(root, window.location.search); 
+});
