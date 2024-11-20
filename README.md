@@ -1,6 +1,6 @@
 # Hópverkefni 2
 
-Nafn: Alexandra Björk Magnúsdóttir
+Nafn: Alexandra Björk Magnúsdóttir /n
 Hí netfang: abm18@hi.is
 Git: alexandrabjorkm
 
