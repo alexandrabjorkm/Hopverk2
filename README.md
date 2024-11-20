@@ -15,7 +15,7 @@
 ## Uppsetning
 Til að keyra verkefnið:
 
-  1. git clone 
+  1. git clone https://github.com/alexandrabjorkm/Hopverk2.git
   2. npm install
   3. npm run dev
   4. http://localhost:5173
